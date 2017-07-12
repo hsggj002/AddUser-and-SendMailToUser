@@ -19,9 +19,10 @@ from core import core
 checkcode=''
 
 for i in range(8):
+	num = random.randint(65,122)
 	current = random.randrange(0,8)
-	if current !=i:
-		temp = chr(random.randint(65,90))
+	if current !=i and num not in range(91,97):
+		temp = chr(num)
 	else:
 		temp = random.randint(0,9)
 
